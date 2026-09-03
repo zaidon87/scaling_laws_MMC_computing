@@ -1,22 +1,12 @@
 # Results
 
-This folder contains result discussions and placeholders for exact MATLAB-exported figures from the MMC computing scaling-law study.
+This folder contains the final result figures and simple discussion notes for the MMC computing scaling-law study.
 
-## Current decision
+## Final figure set
 
-The approximate SVG figures that were previously added to `results/figures/` were removed because they were not exact exports from MATLAB and therefore were not sufficiently accurate for a scientific repository.
+Only five final result figures are kept. No duplicated result is stored here.
 
-The repository should keep only figures generated directly from:
-
-```text
-scripts/matlab/mmc_scaling_analysis.m
-```
-
-or exported from the validated MATLAB `.fig` files.
-
-## Expected final figure set
-
-| Figure | Exact image to add later | Short discussion |
+| Figure | Image | Simple discussion |
 |---|---|---|
 | F1 | `figures/F1_comm_vs_N.png` | `discussion/F1_comm_vs_N_discussion.md` |
 | F2 | `figures/F2_scaling_laws.png` | `discussion/F2_scaling_laws_discussion.md` |
@@ -26,14 +16,14 @@ or exported from the validated MATLAB `.fig` files.
 
 ## Deduplication rule
 
-The uploaded MATLAB `.fig` files contained six files but only five unique results. `2.fig` and `6.fig` both correspond to `F3 U(N)`. Only one validated `F3_utilization` figure should be kept after exact export.
+The uploaded MATLAB `.fig` files contained six files but only five unique results. `2.fig` and `6.fig` both correspond to the same `F3 U(N)` figure. Therefore, only one final `F3_utilization` result is kept.
 
 ## Reproducibility
 
-To regenerate the exact figures locally, run from MATLAB at the repository root:
+The figures should be regenerated from MATLAB using:
 
 ```matlab
 run('scripts/matlab/run_all_scaling_figures.m')
 ```
 
-Then add only the exact exported PNG/PDF/SVG files produced by MATLAB. Do not add manually redrawn or approximate figures to this folder.
+The PNG files in `results/figures/` are the final exported images used for discussion. They must be exact exports from MATLAB or from validated `.fig` files, not manually redrawn approximations.
