@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram name="MCU G474 bubble - Gantt corrected" id="MCU_G474_bubble_-_Gantt_corrected">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="n1" value="CENTRALIZED - MCU G474 + BUBBLE sort (T1/T2/T3 = 0.1/1/10 ms, harmonic, RMS bound U≤1)" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="16" width="1400" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="n2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8B9B4;strokeColor=#D65C5C;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="430" y="78" width="26" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="n3" value="CVB compute (bubble sort)" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="464" y="78" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="n4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B9E7CD;strokeColor=#57BB8A;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="760" y="78" width="26" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="n5" value="Communication (dual-SPI DMA)" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="794" y="78" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="n6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE9A8;strokeColor=#D9B43C;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="78" width="26" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="n7" value="Energy / circulating" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1124" y="78" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="n8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9C6EC;strokeColor=#9673C4;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="78" width="26" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="n9" value="Grid dq outer" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1454" y="78" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="n10" value="U = 17.39% OK - comm = 54% of deadline
+path 71.06 µs → slack 28.94 µs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="112" width="440" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="n11" value="N = 15" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="n12" value="Grid Control - Outer control (T3)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9C6EC;strokeColor=#9673C4;strokeWidth=2;fontSize=14;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="228" width="340" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="n13" value="" style="endArrow=blockThin;endFill=1;html=1;strokeWidth=2;strokeColor=#000000;fontSize=13;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="300" as="sourcePoint"/>
+            <mxPoint x="1750" y="300" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n14" value="Energy control - Inner control (T2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE9A8;strokeColor=#D9B43C;strokeWidth=2;fontSize=14;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="398" width="340" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="n15" value="" style="endArrow=blockThin;endFill=1;html=1;strokeWidth=2;strokeColor=#000000;fontSize=13;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="470" as="sourcePoint"/>
+            <mxPoint x="1750" y="470" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n16" value="Voltage Balancing - Low level (T1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8B9B4;strokeColor=#D65C5C;strokeWidth=2;fontSize=14;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="588" width="340" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="n17" value="" style="endArrow=blockThin;endFill=1;html=1;strokeWidth=2;strokeColor=#000000;fontSize=13;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="660" as="sourcePoint"/>
+            <mxPoint x="1750" y="660" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n18" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE9A8;strokeColor=#D9B43C;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="430.0" y="424" width="12.16" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="n19" value="C2 = 2.9 µs" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="420" y="370" width="200" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="n20" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9C6EC;strokeColor=#9673C4;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="442.16" y="254" width="20.095999999999997" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="n21" value="C3 = 4.7 µs" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="432.16" y="200" width="200" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="n22" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B9E7CD;strokeColor=#57BB8A;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="430.0" y="614" width="230.4" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="n23" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8B9B4;strokeColor=#D65C5C;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="660.4" y="614" width="72.78933333333335" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="n24" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B9E7CD;strokeColor=#57BB8A;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="856.6666666666667" y="614" width="230.4" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="n25" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8B9B4;strokeColor=#D65C5C;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1087.0666666666666" y="614" width="72.78933333333335" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="n26" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B9E7CD;strokeColor=#57BB8A;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1283.3333333333335" y="614" width="230.4" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="n27" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8B9B4;strokeColor=#D65C5C;strokeWidth=2;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1513.7333333333333" y="614" width="72.78933333333335" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="n28" value="acq 54 µs (dual-SPI DMA)" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="436" y="556" width="224" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="n29" value="C1 = 17.1 µs" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="674.4" y="556" width="160" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="n30" value="T1 = 100 µs" style="endArrow=blockThin;endFill=1;html=1;strokeWidth=2;strokeColor=#000000;fontSize=13;startArrow=blockThin;startFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="706" as="sourcePoint"/>
+            <mxPoint x="856.6666666666667" y="706" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n31" value="T2 = 1 ms (off-window)" style="endArrow=blockThin;endFill=1;html=1;strokeWidth=2;strokeColor=#000000;fontSize=13;startArrow=blockThin;startFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="442.16" y="516" as="sourcePoint"/>
+            <mxPoint x="1750" y="516" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n32" value="METHOD &amp; PROOF (sketch): C1(N)=12N²+10N+50 cyc (bubble ≈ N²/2 compare-swaps, code-calibrated) → N=15: 2900 cyc = 17.06 µs · U = 17.06/100 + 2.85/1000 + 4.71/10000 = 17.39% ≤ 100% (Liu–Layland, harmonic set) OK · DMA occupies the link, not the CPU: τ2, τ3 execute during acquisition, CVB starts once its arm data is in · Shared single SPI: Tpath = 2N·3.6 + C1(N)/170 ≤ 100 µs → N=12: 97.56 PASS, N=13: 106.59 FAIL ⇒ Nmax = 12 · Dual SPI (one bus per arm): Tpath = N·3.6 + C1(N)/170 → N=19: 95.29 PASS, N=20: 101.71 FAIL ⇒ Nmax = 19 · Blocking-comm variant: U = 125% &gt; 100% FAIL — the green block alone decides feasibility" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F7F7;strokeColor=#8A8A8A;strokeWidth=2;fontSize=12;fontStyle=0;align=left;verticalAlign=middle;arcSize=16;spacingLeft=14;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry x="430" y="790" width="1320" height="210" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
