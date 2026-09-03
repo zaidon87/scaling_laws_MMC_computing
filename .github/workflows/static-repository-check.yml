@@ -1,0 +1,24 @@
+name: Static repository check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  file-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required text files
+        run: |
+          test -f README.md
+          test -f scripts/matlab/mmc_scaling_analysis.m
+          test -f scripts/matlab/run_all_scaling_figures.m
+          test -f docs/methodology.md
+          test -f docs/scaling-laws.md
+      - name: Reject Office lock files
+        run: |
+          if find . -name '~$*' | grep .; then
+            echo 'Temporary Office lock files must not be committed.'
+            exit 1
+          fi
