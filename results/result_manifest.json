@@ -1,8 +1,21 @@
-[
-  {"path":"results/figures/F1_comm_vs_N.svg","source":"1.fig","decision":"keep as curated image"},
-  {"path":"results/figures/F2_scaling_laws.svg","source":"5.fig","decision":"keep as curated image"},
-  {"path":"results/figures/F3_utilization.svg","source":"6.fig","decision":"keep as curated image"},
-  {"path":"results/figures/F4_feasibility_heatmap.svg","source":"3.fig","decision":"keep as curated image"},
-  {"path":"results/figures/F5_gantt.svg","source":"4.fig","decision":"keep as curated image"},
-  {"source":"2.fig","decision":"skipped because it duplicates F3 U(N)"}
-]
+{
+  "final_figures": [
+    "results/figures/F1_comm_vs_N.png",
+    "results/figures/F2_scaling_laws.png",
+    "results/figures/F3_utilization.png",
+    "results/figures/F4_feasibility_heatmap.png",
+    "results/figures/F5_gantt.png"
+  ],
+  "discussion_files": [
+    "results/discussion/F1_comm_vs_N_discussion.md",
+    "results/discussion/F2_scaling_laws_discussion.md",
+    "results/discussion/F3_utilization_discussion.md",
+    "results/discussion/F4_feasibility_heatmap_discussion.md",
+    "results/discussion/F5_gantt_discussion.md"
+  ],
+  "deduplication": {
+    "kept": ["1.fig", "5.fig", "6.fig", "3.fig", "4.fig"],
+    "skipped": ["2.fig"],
+    "reason": "2.fig and 6.fig correspond to the same F3 utilization result. Only one F3 result is kept."
+  }
+}
