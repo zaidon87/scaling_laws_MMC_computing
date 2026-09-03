@@ -1,7 +1,7 @@
-# F1 — Communication time versus N
+# F1 — Centralized acquisition time versus N
 
-This image shows why centralized MMC acquisition becomes difficult as the number of submodules grows. The controller must collect `2N` voltage frames before making the balancing decision, so the communication time grows linearly with `N`.
+This figure compares the centralized acquisition time for different communication protocols as the number of submodules per arm increases.
 
-At the reference point `N = 15`, a shared SPI20M acquisition path is about `108 µs`, which is already larger than the 100 µs fast control period. With one bus per arm, the acquisition block falls to about `54 µs`.
+The main point is simple: centralized communication grows with `N` because the controller must collect measurements from many submodules. Slow protocols such as CAN and FDCAN become impractical quickly. SPI 20M is better, but it can still reach the control-period limit when `N` becomes moderate. Aurora has the lowest acquisition time.
 
-**Simple result:** in the centralized MCU case, the bus can become the first wall before the sorting algorithm itself.
+**Simple conclusion:** in a centralized MMC controller, the communication path can become the first bottleneck before the computation itself.
