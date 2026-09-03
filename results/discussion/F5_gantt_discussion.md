@@ -1,7 +1,7 @@
 # F5 — Gantt chart at N = 15
 
-This image shows the timing sequence at the reference point `N = 15`. The fast `T1` layer is dominated by measurement acquisition and CVB computation. The energy and grid tasks are much smaller and fit into the remaining slack.
+This figure shows the timing sequence for `N = 15` with centralized bubble sorting on STM32G474 and SPI 20M.
 
-With shared SPI20M, the acquisition block is too large for the 100 µs fast period. With dual-bus DMA, the acquisition time is reduced and the centralized case becomes schedulable.
+The CVB computation is about `17.1 µs`, but the communication block is about `108 µs`. This means the acquisition path alone can exceed the fast control period of `100 µs` when using one shared SPI bus. The timing problem therefore comes mainly from communication, not from the sorting calculation.
 
-**Simple result:** the reference centralized case needs careful acquisition design; otherwise the measurement-to-actuation path misses the deadline.
+**Simple conclusion:** at `N = 15`, centralized acquisition is the critical timing problem. A dual-bus or parallel acquisition structure is needed to recover timing margin.
