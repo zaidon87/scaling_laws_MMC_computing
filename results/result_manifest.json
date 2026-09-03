@@ -1,0 +1,8 @@
+[
+  {"path":"results/figures/F1_comm_vs_N.svg","source":"1.fig","decision":"keep as curated image"},
+  {"path":"results/figures/F2_scaling_laws.svg","source":"5.fig","decision":"keep as curated image"},
+  {"path":"results/figures/F3_utilization.svg","source":"6.fig","decision":"keep as curated image"},
+  {"path":"results/figures/F4_feasibility_heatmap.svg","source":"3.fig","decision":"keep as curated image"},
+  {"path":"results/figures/F5_gantt.svg","source":"4.fig","decision":"keep as curated image"},
+  {"source":"2.fig","decision":"skipped because it duplicates F3 U(N)"}
+]
