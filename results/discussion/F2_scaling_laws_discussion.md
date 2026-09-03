@@ -1,7 +1,7 @@
-# F2 — Computing scaling laws
+# F2 — Layer scaling laws on STM32G474
 
-This image separates the computing cost of the main control choices. Bubble sorting grows as `O(N²)`, merge-class sorting grows as `O(N log N)`, and the ±1-module rule is close to `O(N)`.
+This figure shows how the computing time of the main control layers changes with `N` on the STM32G474.
 
-The decentralized / Local Consensus curve is almost constant per node because each submodule only uses local and neighbor information.
+Bubble sorting grows as `O(N²)`, so it becomes expensive quickly. Merge sorting improves the scaling to `O(N log N)`. The ±1-module rule is lighter because it behaves close to `O(N)`. The decentralized consensus curve stays almost constant per node because each submodule uses only local and neighbor information.
 
-**Simple result:** better sorting reduces computation, but it does not remove the centralized measurement-acquisition bottleneck.
+**Simple conclusion:** reducing the sorting cost helps, but a centralized architecture can still be limited by acquisition and communication.
