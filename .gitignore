@@ -1,0 +1,34 @@
+# MATLAB
+*.asv
+*.m~
+*.mlx~
+slprj/
+codegen/
+*.mex*
+
+# Generated figures and tables
+F1_comm_vs_N.png
+F2_scaling_laws.png
+F3_utilization.png
+F4_feasibility_heatmap.png
+F5_gantt.png
+results/generated/*
+!results/generated/.gitkeep
+results/figures/*
+!results/figures/.gitkeep
+results/tables/*
+!results/tables/.gitkeep
+
+# Office temporary lock files
+~$*.docx
+~$*.xlsx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/.ropeproject
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
