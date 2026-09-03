@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+    "**/~$*": true,
+    "results/generated/**": false
+  },
+  "files.associations": {
+    "*.m": "matlab",
+    "*.drawio": "xml"
+  },
+  "editor.wordWrap": "on"
+}
