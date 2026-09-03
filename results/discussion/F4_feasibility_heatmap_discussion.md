@@ -1,5 +1,7 @@
 # F4 — Feasibility heat map
 
-This image summarizes the feasible `N_max` values by platform and control method. The MCU cases are bounded mainly by communication and then by sequential computation. The FPGA Bitonic option removes most timing pressure, but the limit moves to LUT resources. The Local Consensus option keeps local work constant, so the limit is not local CPU time.
+This figure summarizes the maximum feasible number of submodules `N_max` for each technique and platform.
 
-**Simple result:** each architecture fails for a different reason: bus time for MCU, LUT resources for FPGA, and convergence bandwidth for Local Consensus.
+On microcontrollers, the centralized methods remain limited to low `N` values when the SPI 20M communication path is included. The FPGA Bitonic sorting network reaches a much higher value because the sorting is implemented in hardware. The decentralized consensus case gives the largest local scalability because every submodule computes its own local decision.
+
+**Simple conclusion:** the architecture matters more than only changing the sorting algorithm. Moving from centralized control to distributed local computation changes the scaling behavior.
