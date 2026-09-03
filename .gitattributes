@@ -1,0 +1,10 @@
+*.m text eol=lf diff=matlab
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.drawio text eol=lf
+*.docx binary
+*.xlsx binary
+*.png binary
+*.zip binary
